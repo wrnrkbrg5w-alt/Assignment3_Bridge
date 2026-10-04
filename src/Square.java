@@ -1,4 +1,13 @@
-package PACKAGE_NAME;
+public class Square extends Shape {
+    private final float side;
 
-public class Square {
+    public Square(Renderer renderer, float side) {
+        super(renderer);
+        this.side = side;
+    }
+
+    @Override
+    public void draw() {
+        renderer.renderSquare(side);
+    }
 }

@@ -1,4 +1,13 @@
-package PACKAGE_NAME;
+public class Circle extends Shape {
+    private final float radius;
 
-public class Circle {
+    public Circle(Renderer renderer, float radius) {
+        super(renderer);
+        this.radius = radius;
+    }
+
+    @Override
+    public void draw() {
+        renderer.renderCircle(radius);
+    }
 }
